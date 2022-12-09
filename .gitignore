@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MiniJam121/v16
+/.vs
+/Unity/MiniJam121/Library
+/Unity/MiniJam121/Logs
+/Unity/MiniJam121/obj/Debug
+/Unity/MiniJam121/UserSettings
+/Unity/MiniJam121/.vsconfig
+/Unity/MiniJam121/Assembly-CSharp.csproj
+/Unity/MiniJam121/MiniJam121.sln
+/Unity/MiniJam121/Temp
