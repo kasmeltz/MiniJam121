@@ -40,7 +40,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
         protected void Awake()
         {
             Player = FindObjectOfType<PlayerBehaviour>(true);
-            NarrationPlayer = FindObjectOfType<NarrationPlayerBehaviour>();
+            NarrationPlayer = FindObjectOfType<NarrationPlayerBehaviour>(true);
         }
     }
 }
