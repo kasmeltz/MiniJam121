@@ -34,6 +34,14 @@ namespace HNS.MiniJam121.Unity.Behaviours
                 transform.localScale = new Vector3(1, 1, 1);
                 transform.position += new Vector3(MoveSpeed, 0, 0) * Time.deltaTime;
             }
+
+            var cameraPosition = Camera.main.transform.position;
+
+            cameraPosition = transform.position;
+            cameraPosition.y = 0;
+            cameraPosition.z = -10;
+
+            Camera.main.transform.position = cameraPosition;
         }
     }
 }
