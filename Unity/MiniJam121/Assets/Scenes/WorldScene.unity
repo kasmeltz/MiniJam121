@@ -123,6 +123,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71365208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4731284234469570984, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
+  m_PrefabInstance: {fileID: 500512925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &71365211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71365208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 5
+  NarrationTexts:
+  - Im another bookstand
+  Choices:
+  - Bs 2 1
+  - Bs 2 2
+  - Bs 2 3
+  MinDistanceToActivate: 10
 --- !u!1 &173510233
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +688,7 @@ GameObject:
   - component: {fileID: 738006348}
   - component: {fileID: 738006347}
   - component: {fileID: 738006346}
+  - component: {fileID: 738006349}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -736,6 +762,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &738006349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738006345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 1
+  m_RefResolutionX: 160
+  m_RefResolutionY: 1
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1001 &756349056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1113,6 +1159,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1435246567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1086068984978920489, guid: 920f94873bf7f1c4cba9350c8ceadfe2, type: 3}
+  m_PrefabInstance: {fileID: 1148386259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1435246570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435246567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 3
+  NarrationTexts:
+  - Im a window!
+  Choices:
+  - Window me
+  - Windows sucks
+  - Windows 11
+  MinDistanceToActivate: 10
 --- !u!1 &1438068595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4731284235573241264, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
@@ -1491,11 +1562,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778830405}
   m_CullTransparentMesh: 1
+--- !u!1 &1781687066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4731284233994072786, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
+  m_PrefabInstance: {fileID: 500512925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781687069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781687066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 4
+  NarrationTexts:
+  - Im a bookstand
+  Choices:
+  - B1
+  - B2
+  - B3
+  MinDistanceToActivate: 10
 --- !u!4 &1875195334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1086068984173847215, guid: 920f94873bf7f1c4cba9350c8ceadfe2, type: 3}
   m_PrefabInstance: {fileID: 1148386259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1908850498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8634400391653079433, guid: e96162335b0c66e4eb05231f6db669cc, type: 3}
+  m_PrefabInstance: {fileID: 756349056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1908850501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908850498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 2
+  NarrationTexts:
+  - Im a desk!
+  Choices:
+  - Desk me
+  - Desk me 2
+  - Desk me 3
+  MinDistanceToActivate: 10
 --- !u!1 &1945206415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,14 +1814,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NarrationCategory: 0
+  NarrationCategory: 1
   NarrationTexts:
   - I am a wardrobe
   Choices:
   - Spit
   - Something
   - I dunno
-  MinDistanceToActivate: 0
+  MinDistanceToActivate: 10
 --- !u!1 &2116004066
 GameObject:
   m_ObjectHideFlags: 0

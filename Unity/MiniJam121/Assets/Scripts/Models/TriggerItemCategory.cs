@@ -5,6 +5,8 @@ namespace HNS.MiniJam121.Unity.Behaviours
         Sofa = 0,
         Wardrobe = 1,
         Desk = 2,
-        HouseWindow1 = 3
+        HouseWindow1 = 3,
+        Bookstand1 = 4,
+        Bookstand2 = 5
     }
 }
