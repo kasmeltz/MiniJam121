@@ -37,9 +37,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
             var cameraPosition = Camera.main.transform.position;
 
-            cameraPosition = transform.position;
-            cameraPosition.y = 0;
-            cameraPosition.z = -10;
+            cameraPosition = new Vector3(transform.position.x, cameraPosition.y, cameraPosition.z);
 
             Camera.main.transform.position = cameraPosition;
         }

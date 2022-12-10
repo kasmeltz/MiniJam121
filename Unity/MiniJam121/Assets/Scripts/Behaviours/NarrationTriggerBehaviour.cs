@@ -5,7 +5,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
     [AddComponentMenu("MJ121/NarrationTrigger")]
     public class NarrationTriggerBehaviour : MonoBehaviour
     {
-        public int NarrationIndex;
+        public TriggerItemCategory NarrationCategory;
         public string[] NarrationTexts;
         public string[] Choices;
         public float MinDistanceToActivate;

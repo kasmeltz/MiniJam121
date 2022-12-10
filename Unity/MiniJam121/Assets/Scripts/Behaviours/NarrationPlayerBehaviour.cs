@@ -13,9 +13,9 @@ namespace HNS.MiniJam121.Unity.Behaviours
         public Image[] ChoicePanels;
         public TMP_Text[] ChoiceTextObjects;
 
-        public Dictionary<int, int> ChoicesMade { get; set; }
+        public Dictionary<TriggerItemCategory, int> ChoicesMade { get; set; }
 
-        protected int CurrentNarationIndex { get; set; }
+        protected TriggerItemCategory CurrentNarationCategory { get; set; }
 
         protected int CurrentSelection { get; set; }
 
@@ -33,7 +33,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
             Player
                 .SetPaused(true);
 
-            CurrentNarationIndex = trigger.NarrationIndex;
+            CurrentNarationCategory = trigger.NarrationCategory;
 
             NarrationTextObject.text = trigger.NarrationTexts[0];
 
@@ -77,7 +77,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
         protected void MakeSelection()
         {            
-            ChoicesMade[CurrentNarationIndex] = CurrentSelection;
+            ChoicesMade[CurrentNarationCategory] = CurrentSelection;
 
             gameObject
                 .SetActive(false);
@@ -112,7 +112,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
             gameObject
                 .SetActive(false);
 
-            ChoicesMade = new Dictionary<int, int>();
+            ChoicesMade = new Dictionary<TriggerItemCategory, int>();
             
             Player = FindObjectOfType<PlayerBehaviour>(true);
         }
