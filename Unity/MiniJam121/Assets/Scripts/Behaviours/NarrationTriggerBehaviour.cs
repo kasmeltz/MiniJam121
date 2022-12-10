@@ -28,7 +28,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
                 return;
             }
 
-            float distance = (Player.transform.position - transform.position).magnitude;
+            float distance = Mathf.Abs(Player.transform.position.x - transform.position.x);
 
             if (distance <= MinDistanceToActivate)
             {
