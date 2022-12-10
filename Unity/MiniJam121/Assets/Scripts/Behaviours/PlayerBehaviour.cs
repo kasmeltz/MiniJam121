@@ -7,17 +7,31 @@ namespace HNS.MiniJam121.Unity.Behaviours
     {
         public float MoveSpeed;
 
+        protected bool IsPaused { get; set; }
+
+        public void SetPaused(bool isPaused)
+        {
+            IsPaused = isPaused;
+        }
+
         protected void Update()
         {
+            if (IsPaused)
+            {
+                return;
+            }
+
             if (Input.GetKey(KeyCode.A) || 
                 Input.GetKey(KeyCode.LeftArrow))
             {
+                transform.localScale = new Vector3(-1, 1, 1);
                 transform.position -= new Vector3(MoveSpeed, 0, 0) * Time.deltaTime;
             }
 
             if (Input.GetKey(KeyCode.D) ||
                 Input.GetKey(KeyCode.RightArrow))
             {
+                transform.localScale = new Vector3(1, 1, 1);
                 transform.position += new Vector3(MoveSpeed, 0, 0) * Time.deltaTime;
             }
         }
