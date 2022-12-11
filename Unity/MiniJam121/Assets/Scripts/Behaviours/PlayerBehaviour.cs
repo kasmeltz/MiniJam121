@@ -9,7 +9,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
         public ScenerySectionBehaviour[] ScenerySections;
 
-        public int SceneryIndex;
+        public ScenerySectionBehaviour CurrentScenery;
 
         protected Animator Animator { get; set; }
 
@@ -29,10 +29,10 @@ namespace HNS.MiniJam121.Unity.Behaviours
             }
         }
 
-        public void StartScenery(int index)
+        public void StartScenery(ScenerySectionBehaviour scenery)
         {
-            SceneryIndex = index;
-            transform.position = ScenerySections[SceneryIndex].StartingPosition;
+            CurrentScenery = scenery;
+            transform.position = scenery.StartingPosition;
         }
 
         protected void Update()
@@ -75,15 +75,13 @@ namespace HNS.MiniJam121.Unity.Behaviours
                     .SetBool("IsIdle", false);
             }
 
-            var currentScenery = ScenerySections[SceneryIndex];
-
-            if (position.x < currentScenery.Bounds.x)
+            if (position.x < CurrentScenery.Bounds.x)
             {
-                position.x = currentScenery.Bounds.x;
+                position.x = CurrentScenery.Bounds.x;
             }
-            else if (position.x > currentScenery.Bounds.y)
+            else if (position.x > CurrentScenery.Bounds.y)
             {
-                position.x = currentScenery.Bounds.y;
+                position.x = CurrentScenery.Bounds.y;
             }
 
             transform.position = position;
@@ -99,7 +97,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
         {
             Animator = GetComponent<Animator>();
 
-            StartScenery(0);
+            StartScenery(ScenerySections[0]);
         }
     }
 }
