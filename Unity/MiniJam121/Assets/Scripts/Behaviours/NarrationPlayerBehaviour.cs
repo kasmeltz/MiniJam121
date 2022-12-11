@@ -1,6 +1,5 @@
 namespace HNS.MiniJam121.Unity.Behaviours
 {
-    using System;
     using System.Collections.Generic;
     using TMPro;
     using UnityEngine;
@@ -27,8 +26,6 @@ namespace HNS.MiniJam121.Unity.Behaviours
         protected PlayerBehaviour Player { get; set; }
 
         protected NarrationTriggerBehaviour CurrentTrigger { get; set; }
-
-        protected EndGamePanelBehaviour EndGamePanel { get; set; }
 
         public void PlayNarration(NarrationTriggerBehaviour trigger)
         {
@@ -95,28 +92,6 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
             Player
                .SetPaused(false);
-
-            var triggerCategories = Enum
-                .GetValues(typeof(TriggerItemCategory));
-
-            if (ChoicesMade.Count == triggerCategories.Length)
-            {
-                if (CurrentScore <= -5)
-                {
-                    EndGamePanel
-                        .ShowEnding(0);
-                }
-                else if (CurrentScore <= 5)
-                {
-                    EndGamePanel
-                        .ShowEnding(1);
-                }
-                else
-                {
-                    EndGamePanel
-                        .ShowEnding(2);
-                }
-            }
         }
 
         protected void Update()
