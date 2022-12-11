@@ -15,6 +15,10 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
         public Dictionary<TriggerItemCategory, int> ChoicesMade { get; set; }
 
+        public Dictionary<TriggerItemCategory, float> ChoiceValues { get; set; }
+
+        public float CurrentScore { get; set; }
+
         protected TriggerItemCategory CurrentNarationCategory { get; set; }
 
         protected int CurrentSelection { get; set; }
@@ -78,6 +82,8 @@ namespace HNS.MiniJam121.Unity.Behaviours
         protected void MakeSelection()
         {            
             ChoicesMade[CurrentNarationCategory] = CurrentSelection;
+            ChoiceValues[CurrentNarationCategory] = CurrentTrigger.ChoiceValues[CurrentSelection];
+            CurrentScore += CurrentTrigger.ChoiceValues[CurrentSelection];
 
             gameObject
                 .SetActive(false);
@@ -113,7 +119,9 @@ namespace HNS.MiniJam121.Unity.Behaviours
                 .SetActive(false);
 
             ChoicesMade = new Dictionary<TriggerItemCategory, int>();
-            
+            ChoiceValues = new Dictionary<TriggerItemCategory, float>();
+            CurrentScore = 0;
+
             Player = FindObjectOfType<PlayerBehaviour>(true);
         }
     }

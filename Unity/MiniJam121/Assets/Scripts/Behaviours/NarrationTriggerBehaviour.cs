@@ -8,6 +8,7 @@ namespace HNS.MiniJam121.Unity.Behaviours
         public TriggerItemCategory NarrationCategory;
         public string[] NarrationTexts;
         public string[] Choices;
+        public float[] ChoiceValues;
         public float MinDistanceToActivate;
 
         protected PlayerBehaviour Player { get; set; }

@@ -2,9 +2,11 @@ namespace HNS.MiniJam121.Unity.Behaviours
 {
     public enum SceneryCategory
     {
-        House = 0,
-        Street = 1,
+        House1 = 0,
+        Street1 = 1,
         Playground = 2,
-        School = 3
+        School = 3,
+        Street2 = 4,
+        House2 = 5
     }
 }

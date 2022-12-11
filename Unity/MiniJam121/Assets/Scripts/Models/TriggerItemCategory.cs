@@ -2,11 +2,9 @@ namespace HNS.MiniJam121.Unity.Behaviours
 {
     public enum TriggerItemCategory
     {
-        Sofa = 0,
-        Wardrobe = 1,
-        Desk = 2,
-        HouseWindow1 = 3,
-        Bookstand1 = 4,
-        Bookstand2 = 5
+        Computer = 0,
+        Closet = 1,
+        BathMirror = 2,
+        PictureFrame = 3,
     }
 }
