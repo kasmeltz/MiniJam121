@@ -11,11 +11,22 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
         public int SceneryIndex;
 
+        protected Animator Animator { get; set; }
+
         protected bool IsPaused { get; set; }
 
         public void SetPaused(bool isPaused)
         {
             IsPaused = isPaused;
+
+            if (IsPaused)
+            {
+                Animator
+                    .SetBool("IsWalking", false);
+
+                Animator
+                    .SetBool("IsIdle", true);
+            }
         }
 
         public void StartScenery(int index)
@@ -31,12 +42,24 @@ namespace HNS.MiniJam121.Unity.Behaviours
                 return;
             }
 
+            Animator
+                .SetBool("IsWalking", false);
+
+            Animator
+                .SetBool("IsIdle", true);
+
             var position = transform.position;
             if (Input.GetKey(KeyCode.A) || 
                 Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.localScale = new Vector3(-1, 1, 1);
                 position -= new Vector3(MoveSpeed, 0, 0) * Time.deltaTime;
+                
+                Animator
+                    .SetBool("IsWalking", true);
+
+                Animator
+                    .SetBool("IsIdle", false);
             }
 
             if (Input.GetKey(KeyCode.D) ||
@@ -44,6 +67,12 @@ namespace HNS.MiniJam121.Unity.Behaviours
             {
                 transform.localScale = new Vector3(1, 1, 1);
                 position += new Vector3(MoveSpeed, 0, 0) * Time.deltaTime;
+                
+                Animator
+                    .SetBool("IsWalking", true);
+                
+                Animator
+                    .SetBool("IsIdle", false);
             }
 
             var currentScenery = ScenerySections[SceneryIndex];
@@ -68,6 +97,8 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
         protected void Awake()
         {
+            Animator = GetComponent<Animator>();
+
             StartScenery(0);
         }
     }
