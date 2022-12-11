@@ -667,7 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2d0036f796b0a4c9318ad35d7eae63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 200
+  MoveSpeed: 50
   ScenerySections:
   - {fileID: 1155760309}
   - {fileID: 1214495793}
@@ -2421,9 +2421,9 @@ MonoBehaviour:
   - 'You remember the swingsets and how the 10th graders once threw your backpack
     on top, out of reach.  '
   Choices:
-  - 
-  - 
-  - 
+  - 'I miss her everyday, i still wonder what happened to her.. '
+  - 'I still wonder what happened to her, maybe i should reach out? '
+  - 'I miss her everyday, even if she left me like everyone else.. '
   ChoiceValues:
   - 0
   - 1
