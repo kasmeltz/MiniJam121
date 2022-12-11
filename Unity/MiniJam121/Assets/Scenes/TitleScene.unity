@@ -389,6 +389,7 @@ GameObject:
   - component: {fileID: 1470401992}
   - component: {fileID: 1470401991}
   - component: {fileID: 1470401990}
+  - component: {fileID: 1470401993}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -411,11 +412,11 @@ RectTransform:
   m_Father: {fileID: 184348605}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 1141, y: 173}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1470401990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +460,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1470401991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470401993}
+        m_TargetAssemblyTypeName: HNS.MiniJam121.Unity.Behaviours.ChangeSceneBehaviour,
+          Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: WorldScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1470401991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +512,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470401988}
   m_CullTransparentMesh: 1
+--- !u!114 &1470401993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470401988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12dfcea83a35e6648ae3312d20de2dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2123862563
 GameObject:
   m_ObjectHideFlags: 0
