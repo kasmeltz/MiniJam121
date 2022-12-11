@@ -647,7 +647,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308250612}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6580, y: -6, z: 0}
+  m_LocalPosition: {x: 6000, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -949,6 +949,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
+--- !u!1 &617456110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617456111}
+  - component: {fileID: 617456112}
+  m_Layer: 0
+  m_Name: fountain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617456111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617456110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 580, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1986078171}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617456112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617456110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 8
+  NarrationTexts:
+  - "You forgot your water bottle today and you\u2019re really thirsty. You still
+    have a scar from when they pushed your face on it on second grade. "
+  Choices:
+  - "There\u2019s no one around, I think I can drink a little in peace. "
+  - 'NO. I PROMISED I WILL NEVER DRINK FROM A WATER FOUNTAIN AGAIN. '
+  - 'I rather just be thirsty. '
+  ChoiceValues:
+  - 1
+  - -1
+  - 0
+  MinDistanceToActivate: 10
 --- !u!1 &622819197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,58 +1433,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8634400391451081789, guid: e96162335b0c66e4eb05231f6db669cc, type: 3}
   m_PrefabInstance: {fileID: 689824302}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &689824304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8634400391653079433, guid: e96162335b0c66e4eb05231f6db669cc, type: 3}
-  m_PrefabInstance: {fileID: 689824302}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &689824305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8634400390599791709, guid: e96162335b0c66e4eb05231f6db669cc, type: 3}
-  m_PrefabInstance: {fileID: 689824302}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &689824306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689824304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NarrationCategory: 2
-  NarrationTexts:
-  - Im a desk!
-  Choices:
-  - Desk me
-  - Desk me 2
-  - Desk me 3
-  ChoiceValues: []
-  MinDistanceToActivate: 10
---- !u!114 &689824307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689824305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NarrationCategory: 1
-  NarrationTexts:
-  - I am a wardrobe
-  Choices:
-  - Spit
-  - Something
-  - I dunno
-  ChoiceValues: []
-  MinDistanceToActivate: 10
 --- !u!1 &738006345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,6 +1768,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6038641617674793837, guid: 59d71ea553f9a9e44a2b0f63f60d5163, type: 3}
   m_PrefabInstance: {fileID: 1046043813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &836524764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2396049275487326215, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
+  m_PrefabInstance: {fileID: 500512925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &836524767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836524764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 3
+  NarrationTexts:
+  - Before leaving, a picture grabs your attention. Your mother looked so happy!
+    Your father, stiff as usual, holding you like you weighed nothing.
+  Choices:
+  - "Sometimes I\u2019m glad he is gone, I do not miss the constant arguments."
+  - Time moves too fast and even still I feel exactly like the picture. Empty.
+  - "I miss traveling with my family, it was nice to go somewhere I wasn\u2019t known. "
+  ChoiceValues:
+  - -1
+  - 0
+  - 1
+  MinDistanceToActivate: 10
 --- !u!1001 &864985878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1825,6 +1860,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2541524720094141200, guid: a65f766461664a04abe827c481449250, type: 3}
   m_PrefabInstance: {fileID: 864985878}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &864985880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2541524720094141202, guid: a65f766461664a04abe827c481449250, type: 3}
+  m_PrefabInstance: {fileID: 864985878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864985881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864985880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 6
+  NarrationTexts:
+  - 'You really need to go to the bathroom, like, right now. The same bathroom where
+    they shoved you head on the toilet yesterday. '
+  Choices:
+  - "Can\u2019t I hold until I arrive home? I really don\u2019t want to wet my head
+    today. "
+  - "Oh fuck, I hope there\u2019s no one inside. "
+  - "I\u2019ll just go really quickly to the disabled one. "
+  ChoiceValues:
+  - -1
+  - 0
+  - 1
+  MinDistanceToActivate: 10
 --- !u!1 &865200969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,6 +2910,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5296847659980123489, guid: 85dfc4964e724c44b9129b7df29b723d, type: 3}
   m_PrefabInstance: {fileID: 1181772222}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1181772224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5296847659980123495, guid: 85dfc4964e724c44b9129b7df29b723d, type: 3}
+  m_PrefabInstance: {fileID: 1181772222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1181772225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181772224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 7
+  NarrationTexts:
+  - 'In your last class of the day, the shrew Ms. Julia smiles at you.  '
+  Choices:
+  - 'Have I done something wrong? '
+  - 'Is this a prank? She has never smiled to ANYONE before. '
+  - 'Is she smiling to someone else or have I finally gone mad? '
+  ChoiceValues:
+  - 0
+  - 1
+  - -1
+  MinDistanceToActivate: 10
 --- !u!1 &1214495791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,7 +3005,7 @@ MonoBehaviour:
   PositionToChange: 2110
   ChangeDistance: 10
   ChangeFrom: {fileID: 1214495793}
-  ChangeTo: {fileID: 1509914763}
+  ChangeTo: {fileID: 1986078170}
 --- !u!1 &1230708530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,7 +3016,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1230708533}
   - component: {fileID: 1230708532}
-  - component: {fileID: 1230708531}
   m_Layer: 0
   m_Name: HouseNightSection
   m_TagString: Untagged
@@ -2929,22 +3023,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1230708531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230708530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20a5562276a0aee4b8cba3d5a260dcc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PositionToChange: 198
-  ChangeDistance: 10
-  ChangeFrom: {fileID: 1230708532}
-  ChangeTo: {fileID: 1214495793}
 --- !u!114 &1230708532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2959,7 +3037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneryCategory: 5
   Bounds: {x: -230, y: 198}
-  StartingPosition: {x: -220, y: 1.5}
+  StartingPosition: {x: 190, y: 1.5}
 --- !u!4 &1230708533
 Transform:
   m_ObjectHideFlags: 0
@@ -3813,6 +3891,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6736212423731979867, guid: fbeb9a451021ef543975b477abcd2a56, type: 3}
   m_PrefabInstance: {fileID: 1433556362}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1468912348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468912349}
+  - component: {fileID: 1468912350}
+  m_Layer: 0
+  m_Name: locker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1468912349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468912348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1986078171}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1468912350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468912348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 4
+  NarrationTexts:
+  - 'You try to open your locker without getting dirty from the toilet paper, glue
+    and paint smeared all over. '
+  Choices:
+  - 'I mean. this not even funny. '
+  - "I\u2019ll try to not mess my books. "
+  - "I\u2019m so fucking tired of cleaning this shit every single day!!!! "
+  ChoiceValues:
+  - 0
+  - 1
+  - -1
+  MinDistanceToActivate: 10
 --- !u!1001 &1502373288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3875,6 +4010,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8896635406482047945, guid: 820dfc96b0a1dae4b8b9470fa1a2b704, type: 3}
   m_PrefabInstance: {fileID: 1502373288}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1502373290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8896635406482047951, guid: 820dfc96b0a1dae4b8b9470fa1a2b704, type: 3}
+  m_PrefabInstance: {fileID: 1502373288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1502373291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502373290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 5
+  NarrationTexts:
+  - "Mr. Robert have just arrived at the classroom. You\u2019re lucky you arrived
+    on time. He looks at you in an almost creepy way. "
+  Choices:
+  - "I\u2019ll sit on the front row, so I\u2019ll be more secure. "
+  - "I\u2019ll sit on the back, so I can play away from Robert\u2019s sight. "
+  - "I\u2019ll sit on the wall, so I can lean and hide from everyone. "
+  ChoiceValues:
+  - 1
+  - -1
+  - 0
+  MinDistanceToActivate: 10
 --- !u!1001 &1509645185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3937,84 +4102,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4731284234667246342, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
   m_PrefabInstance: {fileID: 1509645185}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1509645187 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4731284234469570984, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
-  m_PrefabInstance: {fileID: 1509645185}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1509645188 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4731284233994072786, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
-  m_PrefabInstance: {fileID: 1509645185}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1509645189 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4731284235573241264, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
-  m_PrefabInstance: {fileID: 1509645185}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1509645190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509645187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NarrationCategory: 5
-  NarrationTexts:
-  - Im another bookstand
-  Choices:
-  - Bs 2 1
-  - Bs 2 2
-  - Bs 2 3
-  ChoiceValues: []
-  MinDistanceToActivate: 10
---- !u!114 &1509645191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509645188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NarrationCategory: 4
-  NarrationTexts:
-  - Im a bookstand
-  Choices:
-  - B1
-  - B2
-  - B3
-  ChoiceValues: []
-  MinDistanceToActivate: 10
---- !u!114 &1509645192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509645189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NarrationCategory: 0
-  NarrationTexts:
-  - Hello I am a sofa!
-  Choices:
-  - Screw you!
-  - I like you!
-  - Hello back!
-  ChoiceValues: []
-  MinDistanceToActivate: 10
 --- !u!1 &1509914762
 GameObject:
   m_ObjectHideFlags: 0
@@ -4072,7 +4159,7 @@ Transform:
   - {fileID: 1533321213}
   - {fileID: 673986932}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1509914765
 MonoBehaviour:
@@ -4089,7 +4176,7 @@ MonoBehaviour:
   PositionToChange: 4160
   ChangeDistance: 10
   ChangeFrom: {fileID: 1509914763}
-  ChangeTo: {fileID: 1986078170}
+  ChangeTo: {fileID: 2035001835}
 --- !u!1001 &1513167501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5591,6 +5678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1986078171}
   - component: {fileID: 1986078170}
+  - component: {fileID: 1986078172}
   m_Layer: 0
   m_Name: SchoolSection
   m_TagString: Untagged
@@ -5611,7 +5699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneryCategory: 3
-  Bounds: {x: 5850, y: 6580}
+  Bounds: {x: 5850, y: 6620}
   StartingPosition: {x: 5870, y: -6}
 --- !u!4 &1986078171
 Transform:
@@ -5635,9 +5723,27 @@ Transform:
   - {fileID: 1181772223}
   - {fileID: 915848637}
   - {fileID: 1997418834}
+  - {fileID: 1468912349}
+  - {fileID: 617456111}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1986078172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986078169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a5562276a0aee4b8cba3d5a260dcc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionToChange: 6610
+  ChangeDistance: 10
+  ChangeFrom: {fileID: 1986078170}
+  ChangeTo: {fileID: 1509914763}
 --- !u!1001 &1997418833
 PrefabInstance:
   m_ObjectHideFlags: 0
