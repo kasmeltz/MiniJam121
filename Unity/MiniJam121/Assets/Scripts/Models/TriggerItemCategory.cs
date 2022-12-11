@@ -11,6 +11,8 @@ namespace HNS.MiniJam121.Unity.Behaviours
         SchoolBathroom = 6,
         Class2 = 7,
         WaterFountain = 8,
-        Swings = 9
+        Swings = 9,
+        SchoolWindow = 10,
+        Bed = 11
     }
 }

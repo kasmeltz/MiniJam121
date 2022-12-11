@@ -1385,7 +1385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8634400391451081789, guid: e96162335b0c66e4eb05231f6db669cc, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8634400391451081789, guid: e96162335b0c66e4eb05231f6db669cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2995,6 +2995,63 @@ MonoBehaviour:
   - 1
   - -1
   MinDistanceToActivate: 10
+--- !u!1 &1210944736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1210944737}
+  - component: {fileID: 1210944738}
+  m_Layer: 0
+  m_Name: bedtrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1210944737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210944736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -204, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1230708533}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210944738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210944736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 11
+  NarrationTexts:
+  - "You lie down in your bed, contemplating about the day you\u2019ve had.. you
+    doze off into the night."
+  Choices:
+  - What a crappy day. I hate everyone!
+  - I think I learned a lot today.
+  - Today wasn't so bad. Not great though.
+  ChoiceValues:
+  - -1
+  - 1
+  - 0
+  MinDistanceToActivate: 10
 --- !u!1 &1214495791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3106,6 +3163,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1210944737}
   - {fileID: 1825399145}
   - {fileID: 689824303}
   - {fileID: 1850065614}
@@ -3211,7 +3269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1086068984173847215, guid: 920f94873bf7f1c4cba9350c8ceadfe2, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1086068984173847215, guid: 920f94873bf7f1c4cba9350c8ceadfe2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3885,6 +3943,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1399803690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1399803691}
+  - component: {fileID: 1399803692}
+  m_Layer: 0
+  m_Name: windowtrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1399803691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399803690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -95, y: 57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1509914764}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399803692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399803690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a84bc60e987f4da92bce5208db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NarrationCategory: 10
+  NarrationTexts:
+  - 'Your catch a glimpse of your reflex, somber and sad, on the school window. A
+    place supposed to be of education and evolution is your worst nightmare. '
+  Choices:
+  - 'Draw a smiley face on your reflection. '
+  - 'Break the window with a rock. '
+  - Cover the window with dirt.
+  ChoiceValues:
+  - 1
+  - -1
+  - 0
+  MinDistanceToActivate: 10
 --- !u!1001 &1433556362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4274,7 +4389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4731284234667246342, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4731284234667246342, guid: cb4761fbf980d314aaf1f87d6280c249, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4379,6 +4494,7 @@ Transform:
   - {fileID: 1255132095}
   - {fileID: 1533321213}
   - {fileID: 673986932}
+  - {fileID: 1399803691}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5328,7 +5444,7 @@ Transform:
   m_Children:
   - {fileID: 1561667884}
   m_Father: {fileID: 1230708533}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1850065613
 PrefabInstance:
@@ -5339,7 +5455,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6038641617674793837, guid: 59d71ea553f9a9e44a2b0f63f60d5163, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6038641617674793837, guid: 59d71ea553f9a9e44a2b0f63f60d5163, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6095,7 +6211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a5562276a0aee4b8cba3d5a260dcc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PositionToChange: 2110
+  PositionToChange: 1420
   ChangeDistance: 10
   ChangeFrom: {fileID: 2035001835}
   ChangeTo: {fileID: 1230708532}
@@ -6113,7 +6229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneryCategory: 4
   Bounds: {x: 1400, y: 2120}
-  StartingPosition: {x: 1420, y: -6}
+  StartingPosition: {x: 2100, y: -6}
 --- !u!4 &2035001836
 Transform:
   m_ObjectHideFlags: 0
