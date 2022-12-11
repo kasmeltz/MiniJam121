@@ -32,6 +32,8 @@ namespace HNS.MiniJam121.Unity.Behaviours
 
         public void PlayNarration(NarrationTriggerBehaviour trigger)
         {
+            Initialize();
+
             CurrentTrigger = trigger;
 
             CurrentTrigger
@@ -138,16 +140,24 @@ namespace HNS.MiniJam121.Unity.Behaviours
             }
         }
 
-        protected void Awake()
+        protected void Initialize()
         {
-            gameObject
-                .SetActive(false);
+            if (Player != null)
+            {
+                return;
+            }
 
             ChoicesMade = new Dictionary<TriggerItemCategory, int>();
             ChoiceValues = new Dictionary<TriggerItemCategory, float>();
             CurrentScore = 0;
 
             Player = FindObjectOfType<PlayerBehaviour>(true);
+            EndGamePanel = FindObjectOfType<EndGamePanelBehaviour>(true);
+        }
+
+        protected void Awake()
+        {
+            Initialize();
         }
     }
 }
